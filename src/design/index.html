@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <title>Staking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/msgBoxLight.css">
+        <!--===============================================================================================-->
+    </head>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="bg-container-contact100" style="background-image: url(images/ethereum.jpg.jpg); overflow: scroll;">
+        <div class="contact100-header flex-sb-m">
+
+            <div class="col-md-2 col-sm-3">
+                <a href="#" class="contact100-header-logo">
+                    <img src="images/ethereum-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="col-md-8 col-sm-6">
+                <div class="alert alert-warning" role="alert" style="margin-top: 2%;">
+                    babyMTN address: <span id="babyFZMA"></span><br>
+                    MTN address: <span id="FZMA"></span>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-3">
+                <button class="btn btn-danger" id="recievetoken">
+                    Recieve babyMTN Token
+                </button>
+            </div>
+        </div>
+
+
+        <!-- adress shower -->
+        <div class="alert alert-success Addmargin" role="alert">
+            address: <span id="AddressFill"></span>
+        </div>
+        <br>
+
+
+
+        <!-- show an image -->
+        <div class="Addmargin" style="width: 40%; margin-left: 30%;">
+            <img src="images/bankde.jpg.webp" alt="" style="width: 100%;height: 10%;">
+        </div>
+        <br>
+        <br>
+
+
+        <!-- stake info -->
+        <div class="alert alert-info Addmargin" role="alert">
+            Total Value Locked : <span id="Locked"></span><br>
+            <br>
+            All Rewards(MTN) : <span id="AllReward"></span><br>
+            <br>
+            Stake Token(babyMTN) : <span id="Stake"></span><br>
+            <br>
+            Reward Claimable(MTN) : <span id="Reward"></span>
+            <br>
+        </div>
+
+        <br>
+        <div class="flex-sb-m">
+            <button class="btn-show-contact100 btns1" data-toggle="modal" data-target="#exampleModalCenter">
+                STAKE</button>
+            <button class="btn-show-contact100 btns" id="unstake">
+                UNSTAKE</button>
+            <button class="btn-show-contact100 btns" id="claimreward">
+                Claim Reward</button>
+            <button class="btn-show-contact102 btns2" id="btn_distributeRewards">
+                Distribute Rewards</button>
+
+        </div><br>
+
+
+        <div class="alert alert-info addmargin" role="alert">
+
+            <!-- Footer -->
+            <footer class="page-footer font-small teal pt-4">
+
+                <!-- Footer Text -->
+                <div class="container-fluid text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">How It Works</h5><br>
+                            <p>1.Get free babyMTN.</p>
+                            <p> 2.Stake some babyMTN in Bank. (approve to smart contrct to tranfer babyMTN to Bank)</p>
+                            <p> (When Owner Distribute Rewards you can Claim Reward </p>
+                            <p> to Recieve Rewards, otherwise you don't have any Rewards).</p>
+                            <p> 3.Unstake: only Send all babyMTN you had staked,so Claim Rewards at first! </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mb-md-0 mb-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">My accounts</h5><br>
+                            <div class="footlinks">
+                                <ul>
+                                    <h5 class="textgraycolor mt-3 mb-4"><span class="textbluecolor">Email :</span>
+                                        matinjiri@gmail.com</h5><br>
+                                    <h5 class="textgraycolor mt-3 mb-4"><span class="textbluecolor">my GitHub :</span>
+                                        <a style="font-size: 25px;" href="https://github.com/MatinJiridity">MatinJiridity</a>
+                                    </h5>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Text -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">MatinJiri
+                    <a href="/"> </a>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+
+        </div>
+
+    </div>
+
+
+    <!-- stake modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        <div class="alert alert-info cov" role="alert">
+                            Stake Token(babyMTN)
+                        </div>
+
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="Close()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="number" class="form-control" id="valueStake">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="Close()">Close</button>
+                    <button type="button" class="btn btn-primary" id="btn_Stake">Add Stake</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<!-- <script src="vendor/daterangepicker/moment.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/web3new.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+<script src="js/jquery.msgBox.js"></script>
+<script src="js/app.js"></script>
+
+</html>
